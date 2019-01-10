@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_horizontal"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="60dp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/SerijskiBrojLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serijski Broj"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SerijskiBroj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/PrevoznikLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drugi Prevoznik"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Prevoznik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/VoziloLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vozilo"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Vozilo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/RefBrojLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Referentni Broj Utovara"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RefBroj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/UtovarLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Utovar"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Utovar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/RobaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roba"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Roba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/IzvoznaSpedicijaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Izvozna Špedicija"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/IzvoznaSpedicija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/IStovarLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Istovar"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Istovar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/UvoznaSpedicijaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uvozna Špedicija"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/UvoznaSpedicija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/StatusLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/UvoznikLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uvoznik"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Uvoznik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/IzvoznikLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Izvoznik"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Izvoznik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/DAtumAzuriranjaLAbel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="18sp"
+            android:text="Datum Ažuriranja"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DatumAzuriranja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:id="@+id/NapomenaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Napomena"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Napomena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/prazno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PromjenaStatusa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Postavi Status Prevoza: "
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp">
+
+
+            <Button
+                android:id="@+id/BtnNijeUtovareno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:onClick="btnNijeUtovareno"
+                android:text="Nije utovareno"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/BtnUTransportu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:onClick="btnUTransportu"
+                android:text="U Transportu"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="05dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp">
+        <Button
+            android:id="@+id/BtnDostavljeno"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:onClick="btnDostavljeno"
+            android:text="Dostavljeno na krajnju lokaciju"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/BtnDostavljenoBrzaPosta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:onClick="btnDostavljenoBrzaPosta"
+            android:text="Dostavljeno brzoj pošti"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/BtnDostavljenoSkladiste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:onClick="btnDostavljenoSkladiste"
+            android:text="Dostavljeno u skladište"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

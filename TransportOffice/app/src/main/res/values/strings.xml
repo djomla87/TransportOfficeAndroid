@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GMTEL ANDROID</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ProdukcijaSajt"> http://test.gmtel-office.com/ </string>
+    <string name="TestSajt"> http://test.gmtel-office.com/ </string>
+
+    <string name="action_settings">Podešavanja</string>
+    <string name="aplikacija_za_pra_enje_transporta">Aplikacija za praćenje transporta</string>
+    <string name="naziv_firme">GMTEL LOGISTICS</string>
+    <string name="web_adresa">www.gmtel-office.com</string>
+    <string name="title_activity_task">Poslednji prevozi</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+    </string>
+    <string name="title_activity_logovanje">Logovanje</string>
+    <string name="title_activity_task_prevozi">Moji transporti</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_task_detail">Izmjeni Status</string>
+    <string name="title_activity_task_detalji">Detalji prevoza</string>
+    <string name="title_activity_troskovi">TroskoviActivity</string>
+    <string name="title_activity_troskovi_novi">TroskoviNoviActivity</string>
+
+    <string-array name="ValuteTroskova">
+        <item>BAM</item>
+        <item>EUR</item>
+        <item>RSD</item>
+        <item>USD</item>
+
+    </string-array>
+    <string name="title_activity_troskovi_razmjena_acitivty">Razmjena u mjenjačnici</string>
+    <string name="title_activity_search">Pretraga</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mt.menitest.TroskoviActivity"
+    tools:showIn="@layout/activity_troskovi">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:paddingTop="50dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ListViewTroskovi"
+        android:layout_margin="10dp"
+        android:dividerHeight="1dp"
+        android:divider="@color/colorPrimary"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"></ListView>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progresbar"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menu_utovar"
+    android:title="Nije Utovareno">
+</item>
+    <item android:id="@+id/menu_transport"
+        android:title="U Transportu">
+    </item>
+    <item android:id="@+id/menu_istovar"
+        android:title="Istovareno">
+    </item>
+</menu>

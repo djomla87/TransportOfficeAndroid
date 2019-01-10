@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mt.menitest.TroskoviRazmjenaAcitivty"
+    tools:showIn="@layout/activity_troskovi_razmjena_acitivty"
+    android:weightSum="1">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/editText16"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Podaci o razmjenjenoj valuti (iznos i valuta)"
+        android:layout_below="@+id/VrstaTroskaSppiner"
+        android:layout_alignStart="@+id/VrstaTroskaSppiner"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <View android:id="@+id/strut1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/strut1"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/Iznos1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/ValutaSpinner1"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/strut1"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:text="BAM"
+            android:layout_marginTop="3dp"
+            />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/editText6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Podaci o ostatku novca (Iznos i valuta)"
+        android:layout_below="@+id/VrstaTroskaSppiner"
+        android:layout_alignStart="@+id/VrstaTroskaSppiner"
+        android:layout_weight="0.01" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <View android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/strut"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/Iznos2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/ValutaSpinner2"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/strut"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:text="BAM"
+            android:layout_marginTop="3dp"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/editText116"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Datum razmjene"
+        android:layout_below="@+id/VrstaTroskaSppiner"
+        android:layout_alignStart="@+id/VrstaTroskaSppiner"
+        />
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_access_time_24px"
+            android:onClick="showDatePickerDialog"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/datumIvrijeme"
+            android:layout_width="130dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onSacuvaj"
+        android:text="SAČUVAJ" />
+
+</LinearLayout>

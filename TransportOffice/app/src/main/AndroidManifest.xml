@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mt.menitest">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prevozi"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Logovanje"
+            android:label="@string/title_activity_logovanje"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TaskPrevozi"
+            android:label="@string/title_activity_task_prevozi"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mt.menitest.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TaskDetail"
+            android:label="@string/title_activity_task_detail"
+            android:parentActivityName=".TaskPrevozi"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mt.menitest.TaskPrevozi" />
+        </activity>
+
+        <service
+            android:name=".BackgroundService"
+            android:exported="false" />
+
+        <activity
+            android:name=".TaskDetalji"
+            android:label="@string/title_activity_task_detalji"
+            android:parentActivityName=".TaskPrevozi"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mt.menitest.TaskPrevozi" />
+        </activity>
+        <activity
+            android:name=".TroskoviActivity"
+            android:label="Pregled Troškova"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mt.menitest.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TroskoviNoviActivity"
+            android:label="Unos Zaduženja / Rashoda"
+            android:parentActivityName=".TroskoviActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mt.menitest.TroskoviActivity" />
+        </activity>
+        <activity
+            android:name=".TroskoviRazmjenaAcitivty"
+            android:label="@string/title_activity_troskovi_razmjena_acitivty"
+            android:parentActivityName=".TroskoviActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mt.menitest.TroskoviActivity" />
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mt.menitest.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
