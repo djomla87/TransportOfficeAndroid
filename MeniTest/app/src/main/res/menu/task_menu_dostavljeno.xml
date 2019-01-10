@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menu_utovar3"
+    android:title="Nije Utovareno">
+</item>
+    <item android:id="@+id/menu_transport3"
+        android:title="U Transportu">
+    </item>
+    <item android:id="@+id/menu_istovar3"
+        android:title="Istovareno">
+    </item>
+    <item android:id="@+id/menu_promjeni_vozaca3"
+        android:title="Proslijedi prevoz">
+    </item>
+    <item android:id="@+id/menu_troskovi3"
+        android:title="Dodaj Trosak">
+    </item>
+</menu>
